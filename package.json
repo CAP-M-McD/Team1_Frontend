@@ -24,10 +24,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/omcmenamin/FunkBot-Frontend-WebAPI.git"
+    "url": "git+https://github.com/CAP-M-McD/Team1_Frontend.git"
   },
   "bugs": {
-    "url": "https://github.com/omcmenamin/FunkBot-Frontend-WebAPI/issues"
+    "url": "https://github.com/CAP-M-McD/Team1_Frontend.git/issues"
   },
-  "homepage": "https://github.com/omcmenamin/FunkBot-Frontend-WebAPI#readme"
+  "homepage": "https://github.com/CAP-M-McD/Team1_Frontend.git#readme"
 }
