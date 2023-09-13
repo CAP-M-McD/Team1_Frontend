@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--Waiting on branding and template for HTML to add formatting and main page layout
+such as header and footer and colour scheme-->
+<html>
+    <body>
+     <header class = "bg-dark text-light">
+            <div class ="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Kainos Jobs</h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class = "container mt-4">
+            <section id="roles" class="mt-4">
+                <h2>Job Roles</h2>
+                {% if Roles and Roles.length > 0 %}
+                <table class ="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Job Title</th>
+                            <th scope="col">Job Family</th>
+                            <th scope="col">Capabilities</th>
+                            <th scope="col">Management Level</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Min Requirements</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    {% for roles in Roles %}
+                    <tr>
+                        <td>{{ roles.jobProfileTitle}}</td>
+                        <td>{{ roles.jobFamily }}</td>
+                        <td>{{ roles.capability }}</td>
+                        <td>{{ roles.managementLevel }}</td>
+                        <td>{{ roles.description }}</td>
+                        <td>{{ roles.minimalEssentialRequirements }}</td>
+                        <td><a href="/job-roles/{{ Roles.rolesId }}">View</a></td>
+                    </tr>
+                    {% endfor %}
+
+                    </tbody>
+                </table>
+                {% else %}
+                There are no Job Roles.
+                {% endif %}
+            </section>
+        </main>
+    </body>
+</html>

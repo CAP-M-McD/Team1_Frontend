@@ -28,4 +28,5 @@ app.listen(3000, ()=> {
 });
 
 require('./controller/helloWorldController')(app);
+require('./controller/rolesController')(app);
 
