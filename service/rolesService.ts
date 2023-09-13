@@ -1,13 +1,12 @@
 const axios = require('axios');
 import { Roles } from "../model/Roles";
-axios.defaults.baseURL = process.env.API_URL;
+const API_BASE_URL: string='http://localhost:8080/api'
 
-module.exports.URL = '/api/job-roles'
 
-module.exports.getJobRoles= async function(){
+module.exports.getJobRoles= async function(): Promise<Roles[]>{
     try{
-        const response =await axios.get(this.url)
-
+        const response =await axios.get('http://localhost:8080/api/job-roles')
+        
         return response.data
     }catch (e) {
         throw new Error('Could not get job roles')
