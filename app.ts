@@ -1,8 +1,6 @@
 const express = require('express');
 const path = require('path');
 const nunjucks = require('nunjucks');
-
-
 const app = express();
 
 //configure nunjucks
