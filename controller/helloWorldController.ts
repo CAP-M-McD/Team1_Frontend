@@ -6,7 +6,8 @@ module.exports = function(app: Application){
          res.render('helloWorld')
     })
 
-    app.get('/index', async (req:Request, res: Response)=>{
+   
+    app.get('/', async (req:Request, res: Response)=>{
         res.render('index')
    })
 }
