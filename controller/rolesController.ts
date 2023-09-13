@@ -1,19 +1,27 @@
 import { Application, Request, Response } from "express";
 
-const rolesService = require('../service/rolesService')
+const express = require('express')
+const router = express.Router()
 
-module.exports = function(app: Application){
 
-    app.get('/job-roles', async (req: Request, res: Response) => {
-        let data = [];
+router.get('/', async (req:Request, res:Response) => {     
+    res.render('view-roles') 
+});
+module.exports = router
 
-        try{
-            data = await rolesService.getJobRoles()
-        } catch(e){
-            console.error(e);
-        }
-        console.log(data)
-        res.render('view-roles', {Roles: data})
 
-    })
-}
+// module.exports = function(app: Application){
+
+//     app.get('/job-roles', async (req: Request, res: Response) => {
+//         let data = [];
+
+//         try{
+//             data = await rolesService.getJobRoles()
+//         } catch(e){
+//             console.error(e);
+//         }
+//         console.log(data)
+//         res.render('view-roles', {Roles: data})
+
+//     })
+// }
