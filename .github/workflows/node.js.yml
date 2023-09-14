@@ -30,4 +30,4 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - name: Run HTMLhint
-    - run: ./node_modules/.bin/htmlhint **/*.html
+      run: ./node_modules/.bin/htmlhint **/*.html
