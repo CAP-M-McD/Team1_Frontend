@@ -32,4 +32,4 @@ jobs:
     - name: Run HTMLhint
       run: ./node_modules/.bin/htmlhint **/*.html
     - name: Run Stylelint
-      run: npx stylelint "**/*.css"
+      run: npx stylelint "**/*.css" --fix
