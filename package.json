@@ -1,48 +1,48 @@
 {
-  "name": "team1-frontend",
-  "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
-  "scripts": {
-    "start": "npx tsc && cp -R views dist && cp -R public dist && node dist/app.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "htmlhint *.html **/*.html && stylelint *.css **/*.css && eslint *.ts **/*.ts && prettier . --check",
-    "lint-fix": "htmlhint *.html **/*.html && stylelint *.css **/*.css --fix && eslint app.ts **/*.ts --fix && prettier . --write"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@types/express-session": "^1.17.7",
-    "axios": "^1.5.0",
-    "express": "^4.18.2",
-    "express-session": "^1.17.3",
-    "node": "^20.6.0",
-    "nunjucks": "^3.2.4"
-  },
-  "devDependencies": {
-    "@types/express": "^4.17.17",
-    "@types/node": "^20.5.7",
-    "@typescript-eslint/eslint-plugin": "^6.7.0",
-    "eslint": "^8.49.0",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-config-standard-with-typescript": "^39.0.0",
-    "eslint-plugin-es5": "^1.5.0",
-    "eslint-plugin-import": "^2.28.1",
-    "eslint-plugin-n": "^16.1.0",
-    "eslint-plugin-promise": "^6.1.1",
-    "htmlhint": "^1.1.4",
-    "prettier": "3.0.3",
-    "stylelint": "^15.10.3",
-    "stylelint-config-prettier": "^9.0.5",
-    "stylelint-config-standard": "^34.0.0",
-    "typescript": "^5.2.2"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CAP-M-McD/Team1_Frontend.git"
-  },
-  "bugs": {
-    "url": "https://github.com/CAP-M-McD/Team1_Frontend.git/issues"
-  },
-  "homepage": "https://github.com/CAP-M-McD/Team1_Frontend.git#readme"
+    "name": "team1-frontend",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "start": "npx tsc && cp -R views dist && cp -R public dist && node dist/app.js",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "lint": "htmlhint *.html **/*.html && stylelint *.css **/*.css && eslint *.ts **/*.ts && prettier . --check",
+        "lint-fix": "htmlhint *.html **/*.html && stylelint *.css **/*.css --fix && eslint app.ts **/*.ts --fix && prettier . --write"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@types/express-session": "^1.17.7",
+        "axios": "^1.5.0",
+        "express": "^4.18.2",
+        "express-session": "^1.17.3",
+        "node": "^20.6.0",
+        "nunjucks": "^3.2.4"
+    },
+    "devDependencies": {
+        "@types/express": "^4.17.17",
+        "@types/node": "^20.5.7",
+        "@typescript-eslint/eslint-plugin": "^6.7.0",
+        "eslint": "^8.49.0",
+        "eslint-config-prettier": "^9.0.0",
+        "eslint-config-standard-with-typescript": "^39.0.0",
+        "eslint-plugin-es5": "^1.5.0",
+        "eslint-plugin-import": "^2.28.1",
+        "eslint-plugin-n": "^16.1.0",
+        "eslint-plugin-promise": "^6.1.1",
+        "htmlhint": "^1.1.4",
+        "prettier": "3.0.3",
+        "stylelint": "^15.10.3",
+        "stylelint-config-prettier": "^9.0.5",
+        "stylelint-config-standard": "^34.0.0",
+        "typescript": "^5.2.2"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/CAP-M-McD/Team1_Frontend.git"
+    },
+    "bugs": {
+        "url": "https://github.com/CAP-M-McD/Team1_Frontend.git/issues"
+    },
+    "homepage": "https://github.com/CAP-M-McD/Team1_Frontend.git#readme"
 }

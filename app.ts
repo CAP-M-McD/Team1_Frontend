@@ -8,9 +8,9 @@ const app = express()
 const appViews = path.join(__dirname, '/views')
 
 const nunjucksConfig = {
-  autoescape: true,
-  coCache: true,
-  express: app
+    autoescape: true,
+    coCache: true,
+    express: app,
 }
 
 nunjucks.configure(appViews, nunjucksConfig)
@@ -26,7 +26,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 app.listen(3000, () => {
-  console.log('Server listening on port 3000')
+    console.log('Server listening on port 3000')
 })
 
 require('./controller/helloWorldController')(app)

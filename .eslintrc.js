@@ -1,36 +1,34 @@
-module.exports =  {
-    "env": {
-        "commonjs": true,
-        "node": true
+module.exports = {
+    env: {
+        commonjs: true,
+        node: true,
     },
-    "extends": [ "standard-with-typescript", "prettier" ],
-    "overrides": [
+    extends: ['standard-with-typescript', 'prettier'],
+    overrides: [
         {
-            "env": {
-                "node": true
+            env: {
+                node: true,
             },
-            "files": [
-                ".eslintrc.{js,cjs}"
-            ],
-            "parserOptions": {
-                "sourceType": "script"
-            }
-        }
+            files: ['.eslintrc.{js,cjs}'],
+            parserOptions: {
+                sourceType: 'script',
+            },
+        },
     ],
-    "parserOptions": {
-        "ecmaVersion": "latest"
+    parserOptions: {
+        ecmaVersion: 'latest',
     },
-    "rules": {
-        "@typescript-eslint/no-var-requires": "off",
-        "@typescript-eslint/no-misused-promises": [
-            "error",
+    rules: {
+        '@typescript-eslint/no-var-requires': 'off',
+        '@typescript-eslint/no-misused-promises': [
+            'error',
             {
-              "checksVoidReturn": {
-                "arguments": false,
-                "attributes": false
-              }
-            }
-          ]
+                checksVoidReturn: {
+                    arguments: false,
+                    attributes: false,
+                },
+            },
+        ],
     },
-    "plugins": ["es5"]
+    plugins: ['es5'],
 }
