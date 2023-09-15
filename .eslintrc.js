@@ -22,5 +22,15 @@ module.exports = {
         "ecmaVersion": "latest"
     },
     "rules": {
+        "@typescript-eslint/no-var-requires": "off",
+        "@typescript-eslint/no-misused-promises": [
+            "error",
+            {
+              "checksVoidReturn": {
+                "arguments": false,
+                "attributes": false
+              }
+            }
+          ]
     }
 }
