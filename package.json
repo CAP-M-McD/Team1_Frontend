@@ -6,9 +6,8 @@
   "scripts": {
     "start": "npx tsc && cp -R views dist && cp -R public dist && node dist/app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "htmlhint *.html **/*.html && stylelint *.css **/*.css && eslint *.ts **/*.ts",
-    "lint-fix": "htmlhint *.html **/*.html && stylelint *.css **/*.css --fix && eslint app.ts **/*.ts --fix",
-    "stylelint-check": "stylelint-config-prettier-check"
+    "lint": "htmlhint *.html **/*.html && stylelint *.css **/*.css && eslint *.ts **/*.ts && prettier . --check",
+    "lint-fix": "htmlhint *.html **/*.html && stylelint *.css **/*.css --fix && eslint app.ts **/*.ts --fix && prettier . --write"
   },
   "author": "",
   "license": "ISC",
