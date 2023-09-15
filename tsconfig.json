@@ -6,7 +6,7 @@
         "noImplicitAny": true,
         "strictNullChecks": true
     },
-    "include": ["./**/*"],
+    "include": ["./**/*", ".eslintrc.js"],
     "exclude": [
         "./node_modules/**/*",
         "./dist/**/*"
