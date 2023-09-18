@@ -12,7 +12,6 @@ module.exports = function(app: Application){
         } catch(e){
             console.error(e);
         }
-        console.log(data)
         res.render('view-roles', {Roles: data})
 
     })
