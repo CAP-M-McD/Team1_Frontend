@@ -1,2 +1,6 @@
-node_modules
 **/dist/**
+**/.git
+**/.svn
+**/.hg
+**/node_modules
+**/.github/**
