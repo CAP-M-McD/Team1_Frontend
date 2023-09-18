@@ -6,7 +6,7 @@ module.exports.URL = '/job-roles'
 
 module.exports.getJobRoles = async function(): Promise<Roles[]>{
     try{
-        const response =await axios.get('this.URL)')
+        const response =await axios.get(this.URL)
         
         return response.data
     }catch (e) {
