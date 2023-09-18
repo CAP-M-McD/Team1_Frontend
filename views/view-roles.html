@@ -20,15 +20,15 @@
                     </tr>
                 </thead>
                 <tbody>
-                {% for roles in Roles %}
+                {% for role in Roles %}
                 <tr>
-                    <td>{{ roles.jobProfileTitle}}</td>
-                    <td>{{ roles.jobFamily }}</td>
-                    <td>{{ roles.capability }}</td>
-                    <td>{{ roles.managementLevel }}</td>
-                    <td>{{ roles.description }}</td>
-                    <td>{{ roles.minimalEssentialRequirements }}</td>
-                    <td><a href="/job-roles/{{ Roles.rolesId }}">View</a></td>
+                    <td>{{ role.jobProfileTitle}}</td>
+                    <td>{{ role.jobFamily }}</td>
+                    <td>{{ role.capability }}</td>
+                    <td>{{ role.managementLevel }}</td>
+                    <td>{{ role.description }}</td>
+                    <td>{{ role.minimalEssentialRequirements }}</td>
+                    <td><a href="/job-roles/{{ role.rolesId }}">View</a></td>
                 </tr>
                 {% endfor %}
 
