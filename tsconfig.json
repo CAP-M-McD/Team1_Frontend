@@ -3,7 +3,8 @@
         "outDir": "./dist",
         "target": "ES5",
         "sourceMap": true,
-        "noImplicitAny": true
+        "noImplicitAny": true,
+        "module": "CommonJS"
     },
     "include": ["./**/*"],
     "exclude": [
