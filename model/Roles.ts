@@ -1,9 +1,9 @@
-export class Roles{
+export class Roles {
     roleId: number
-    capability: String
-    jobFamily: String
-    jobProfileTitle: String
-    managementLevel: String
-    description: String
-    minimalEssentialRequirements: String
+    capability: string
+    jobFamily: string
+    jobProfileTitle: string
+    managementLevel: string
+    description: string
+    minimalEssentialRequirements: string
 }

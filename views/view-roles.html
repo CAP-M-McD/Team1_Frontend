@@ -1,14 +1,11 @@
-{% extends "layout.html" %}
-
-{% set page_title = "View Job Roles" %}
-
-{% block main %}
-    <main>
-        <section>
-          <section id="roles" class="mt-4">
+{% extends "layout.html" %} {% set page_title = "View Job Roles" %} {% block
+main %}
+<main>
+    <section>
+        <section id="roles" class="mt-4">
             <h1>View all Job Roles</h1>
             {% if Roles and Roles.length > 0 %}
-            <table class ="table">
+            <table class="table">
                 <thead>
                     <tr>
                         <th scope="col">Job Title</th>
@@ -20,23 +17,23 @@
                     </tr>
                 </thead>
                 <tbody>
-                {% for role in Roles %}
-                <tr>
-                    <td>{{ role.jobProfileTitle}}</td>
-                    <td>{{ role.jobFamily }}</td>
-                    <td>{{ role.capability }}</td>
-                    <td>{{ role.managementLevel }}</td>
-                    <td>{{ role.description }}</td>
-                    <td>{{ role.minimalEssentialRequirements }}</td>
-                    <td><a href="/job-roles/{{ role.rolesId }}">View</a></td>
-                </tr>
-                {% endfor %}
-
+                    {% for role in Roles %}
+                    <tr>
+                        <td>{{ role.jobProfileTitle}}</td>
+                        <td>{{ role.jobFamily }}</td>
+                        <td>{{ role.capability }}</td>
+                        <td>{{ role.managementLevel }}</td>
+                        <td>{{ role.description }}</td>
+                        <td>{{ role.minimalEssentialRequirements }}</td>
+                        <td>
+                            <a href="/job-roles/{{ role.rolesId }}">View</a>
+                        </td>
+                    </tr>
+                    {% endfor %}
                 </tbody>
             </table>
-            {% else %}
-            There are no Job Roles.
-            {% endif %}
+            {% else %} There are no Job Roles. {% endif %}
         </section>
-    </main>
- {% endblock %}
+    </section>
+</main>
+{% endblock %}
