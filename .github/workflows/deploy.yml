@@ -1,11 +1,10 @@
-name: Docker Deploy
+name: Deploy
 
 on:
-  push:
-    branches: [ "main" ]
-    # TO DO: REMOVE BEFORE MERGE!!!!!!!!
-  pull_request:
-    branches: [ "main" ]
+  workflow_run:
+    workflows: ["Build"]
+    types:
+      - completed
 
 jobs:
 
