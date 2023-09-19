@@ -1,5 +1,5 @@
 @font-face {
-    font-family: centuryFont;
+    font-family: Gothic;
     src: url('GOTHIC.TTF');
 }
 
@@ -10,7 +10,7 @@ body {
     width: 100%;
     height: 100%;
     /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
-    font-family: centuryFont;
+    font-family: Gothic;
 }
 
 .header {
@@ -25,7 +25,7 @@ body {
 .login {
     background-color: #fff;
     color: #283583;
-    border: 2px solid #283583;
+    border: 1px solid #283583;
     cursor: pointer;
 }
 
@@ -35,8 +35,9 @@ body {
 }
 
 .hero-login {
-    background-color: #fff0;
-    color: #fff;
+    background-color: #fff;
+    border: 2px solid #283583;
+    color: #283583;
     cursor: pointer;
 }
 
@@ -51,7 +52,7 @@ body {
 }
 
 footer {
-    background-color: #575756;
+    background-color: #283583;
     color: #fff;
 }
 
@@ -86,9 +87,8 @@ footer {
 .smaller {
     width: 100%;
     height: 50px;
-    background-color: #5757567a;
+    background-color: white;
     position: absolute;
     bottom: 0;
     text-align: center;
-    color: white;
 }

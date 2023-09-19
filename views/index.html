@@ -1,121 +1,15 @@
 <!doctype html>
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Kainos Jobs</title>
-        <link rel="icon" type="image/x-icon" href="public/imgs/favicon1.png" />
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-            crossorigin="anonymous"
-        />
-        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-        <link
-            rel="stylesheet"
-            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        />
-        <link rel="stylesheet" type="text/css" href="public/styles.css" />
-    </head>
-
-    <body>
-        <header class="header">
-            <nav class="navbar navbar-default navbar-expand-lg mx-auto">
-                <a class="navbar-brand mt-2" href="#">
-                    <img
-                        src="public/imgs/KainosLogo.png"
-                        width="100"
-                        height="30"
-                        class="d-inline-block align-top ml-3"
-                        alt="Kainos Logo"
-                    />
-                </a>
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav"
-                    aria-controls="navbarNav"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <span class="navbar-toggler-icon"></span>
+{% extends "layout.html" %} {% set page_title = "Kainos Jobs" %} {% block main
+%}
+<main>
+    <section>
+        <div class="container-fluid hero">
+            <div class="container-fluid smaller">
+                <button class="btn mt-2 hero-login" href="#">
+                    Sign in to view jobs
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item active ml-3 mt-2">
-                            <a class="nav-link" href="#">Home</a>
-                        </li>
-                        <li class="nav-item ml-3 mt-2">
-                            <a class="nav-link" href="#">Jobs</a>
-                        </li>
-                        <li class="nav-item ml-3 mt-2">
-                            <a class="nav-link" href="#">More Jobs</a>
-                        </li>
-                    </ul>
-                    <form class="form-inline my-2 my-lg-0 ml-3">
-                        <button class="btn my-2 my-sm-0 login" href="#">
-                            Login
-                        </button>
-                    </form>
-                </div>
-            </nav>
-        </header>
-
-        <main>
-            <section>
-                <div class="container-fluid hero">
-                    <div class="container-fluid smaller">
-                        <button class="btn mt-2 hero-login" href="#">
-                            Sign in to view jobs
-                        </button>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer class="text-center text-lg-start mt-5">
-            <div class="container p-4 pb-0">
-                <section class="">
-                    <div class="row">
-                        <div class="col-lg">
-                            <p class="text-uppercase footer">Address</p>
-                            <p class="footer">Kainos House</p>
-                            <p class="footer">4-6 Upper Crescent</p>
-                            <p class="footer">Belfast BT7 1NT</p>
-                            <p class="footer">Northern Ireland</p>
-                        </div>
-                        <div class="col-lg">
-                            <p class="text-uppercase footer">Email</p>
-                            <ul class="list-unstyled mb-0">
-                                <li>
-                                    <a href="#!" class="text-white"
-                                        >investorrelations@kainos.com</a
-                                    >
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-lg">
-                            <p class="text-uppercase footer">Phone</p>
-                            <ul class="list-unstyled mb-0">
-                                <li>
-                                    <a href="#!" class="text-white"
-                                        >028 9057 1100</a
-                                    >
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <hr class="mt-4" />
-                </section>
             </div>
-            <div class="text-center p-3">© 2023 Team1Kainos</div>
-        </footer>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-            crossorigin="anonymous"
-        ></script>
-    </body>
-</html>
+        </div>
+    </section>
+</main>
+{% endblock %}
