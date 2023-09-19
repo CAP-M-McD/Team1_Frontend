@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npx tsc && cp -R views dist && node dist/app.js",
     "test": "nyc --reporter=text mocha -require ts-node/register test/unit/*/*.ts",
-    "test-ui": "mocha -require ts-node/register --timeout 10000 test/ui/**/*.ts"
+    "test-ui": "nyc --reporter=text mocha -require ts-node/register --timeout 10000 test/ui/**/*.ts"
   },
   "author": "",
   "license": "ISC",

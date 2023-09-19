@@ -7,3 +7,9 @@
 
 Tip: To add applications as part the machine environment variables you need to add the application urls localy i.e.
 MacOS users add "export API_URL=http://localhost:8080/" to their .zshrc file
+
+## How to Test Application:
+1. Run `npm install` to build application 
+2. To Run Unit tests use `npm test` (This will show test passes & fails and test coverage)
+3. To Run UI tests use `npm test-ui` (This will show test passes & fails and test coverage)
+
