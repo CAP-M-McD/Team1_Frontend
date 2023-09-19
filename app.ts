@@ -19,7 +19,7 @@ nunjucks.configure(appViews, nunjucksConfig);
 //configure Express
 app.set('view engine', 'html');
 
-app.use('/public',express.static(path.join(__dirname, 'public')));
+app.use('/public', express.static(path.join(__dirname, 'public')));
 
 app.use(express.json())
 
