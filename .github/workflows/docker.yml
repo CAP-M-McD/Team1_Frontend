@@ -1,0 +1,24 @@
+version: '1'
+services:
+  web:
+    container_name: Team1_Frontend
+    hostname: Team1_Frontend
+    ports:
+      - "3000:3000"   
+    image: kainos-engacademy:expressgov
+    environment:
+      - API_URL=$API_URL
+    depends_on:
+      - backend
+  backend:
+    container_name: JDBC
+    hostname: jdbc
+    ports:
+      - "8080:8080"
+    image: belfast-team-1-api:jdbc
+    environment:
+      - DB_HOST=$DB_HOST
+      - DB_PASSWORD=$DB_PASSWORD
+      - DB_USERNAME=$DB_USERNAME
+      - DB_NAME=$DB_NAME
+      
