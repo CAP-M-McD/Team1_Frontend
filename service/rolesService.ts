@@ -10,6 +10,12 @@ module.exports.getJobRoles = async function (): Promise<Roles[]> {
 
         return response.data
     } catch (e) {
-        throw new Error('Could not get job roles')
+        if (e.response.status === 404) {
+            throw new Error('Job roles not found')
+        } else if (e.response.status === 500) {
+            throw new Error('Failed to fetch job roles')
+        } else {
+            throw new Error('Could not get job roles')
+        }
     }
 }
