@@ -29,3 +29,4 @@ app.listen(3000, () => {
 })
 
 require('./controller/rolesController')(app)
+require('./controller/baseController')(app)
