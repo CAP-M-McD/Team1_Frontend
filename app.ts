@@ -4,7 +4,6 @@ const nunjucks = require('nunjucks')
 
 const app = express()
 
-// configure nunjucks
 const appViews = path.join(__dirname, '/views')
 
 const nunjucksConfig = {
@@ -15,7 +14,6 @@ const nunjucksConfig = {
 
 nunjucks.configure(appViews, nunjucksConfig)
 
-// configure Express
 app.set('view engine', 'html')
 
 app.use('/public', express.static(path.join(__dirname, 'public')))

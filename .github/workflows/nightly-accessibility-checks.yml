@@ -1,0 +1,24 @@
+name: "Pa11y-ci"
+on:
+  schedule:
+    - cron: "0 10 * * *"
+        
+jobs:
+  pa11y-ci:
+      runs-on: ubuntu-latest
+      strategy:
+          matrix:
+            node-version: [14.x]
+      steps: 
+        - uses: actions/checkout@v3
+        - name: Use Node.js ${{ matrix.node-version }}
+          uses: actions/setup-node@v3
+          with:
+            node-version: ${{ matrix.node-version }}
+            cache: 'npm'
+        - run: npm install
+        - run: npm run build --if-present
+        - name: Testing with Pa11y-ci
+          env: 
+            PA11Y_TEST: ${{ vars.PA11Y_TEST }}
+          run: npm run pa11y-ci

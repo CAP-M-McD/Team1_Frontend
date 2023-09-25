@@ -8,12 +8,12 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "lint": "htmlhint *.html **/*.html && stylelint *.css **/*.css && eslint *.ts **/*.ts && prettier . --check",
         "lint-fix": "htmlhint *.html **/*.html && stylelint *.css **/*.css --fix && eslint app.ts **/*.ts --fix && prettier . --write",
-        "prepare": "husky install"
+        "prepare": "husky install",
+        "pa11y-ci": "pa11y-ci -c .pa11yci.conf.js"
     },
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "@types/express-session": "^1.17.7",
         "axios": "^1.5.0",
         "express": "^4.18.2",
         "express-session": "^1.17.3",
@@ -21,6 +21,7 @@
         "nunjucks": "^3.2.4"
     },
     "devDependencies": {
+        "@types/express-session": "^1.17.7",
         "@types/express": "^4.17.17",
         "@types/node": "^20.5.7",
         "@typescript-eslint/eslint-plugin": "^6.7.0",
@@ -34,9 +35,9 @@
         "htmlhint": "^1.1.4",
         "husky": "^8.0.3",
         "lint-staged": "^14.0.1",
+        "pa11y-ci": "^3.0.1",
         "prettier": "3.0.3",
         "stylelint": "^15.10.3",
-        "stylelint-config-prettier": "^9.0.5",
         "stylelint-config-standard": "^34.0.0",
         "typescript": "^5.2.2"
     },
