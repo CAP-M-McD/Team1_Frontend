@@ -1,7 +1,7 @@
 name: "Pa11y-ci"
 on:
   schedule:
-    - cron: "0 10 * * *"
+    - cron: "0 20 * * *"
         
 jobs:
   pa11y-ci:
