@@ -29,6 +29,7 @@ module.exports = {
                 },
             },
         ],
+        '@typescript-eslint/strict-boolean-expressions': 'off',
     },
     plugins: ['es5'],
 }
