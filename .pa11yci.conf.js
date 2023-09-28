@@ -7,7 +7,7 @@ var defaults = {
     },
 }
 
-var urls = ['${PA11Y_TEST}']
+var urls = ['${PA11Y_TEST}', '${PA11Y_TEST}/job-roles']
 
 function myPa11yCiConfiguration() {
     console.error('Env:', process.env.PA11Y_TEST)
