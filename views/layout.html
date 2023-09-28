@@ -35,11 +35,8 @@
                         <li class="nav-item ml-3 mt-2">
                             <a class="nav-link" href="/job-roles" id="jobs">Jobs</a>
                        </li>
-                        <li class="nav-item ml-3 mt-2">
-                            <a class="nav-link" href="#" id="more-jobs">More Jobs</a>
-                        </li>
                     </ul>
-                    <form class="form-inline my-2 my-lg-0 ml-3">
+                    <form class="form-inline my-2 my-lg-0 ml-2">
                         <button class="btn my-2 my-sm-0 login" href="#">
                             <a href="/login" id="login">Login</a>
                         </button>
@@ -47,50 +44,55 @@
                 </div>
             </nav>
         </header>
-        {% endblock %} {% block main %} {% endblock %} {% block footer %}
-        <footer class="text-center text-lg-start mt-5">
-            <div class="container p-4 pb-0">
-                <section class="">
-                    <div class="row">
-                        <div class="col-lg">
-                            <p class="text-uppercase footer">Address</p>
-                            <p class="footer">Kainos House</p>
-                            <p class="footer">4-6 Upper Crescent</p>
-                            <p class="footer">Belfast BT7 1NT</p>
-                            <p class="footer">Northern Ireland</p>
-                        </div>
-                        <div class="col-lg">
-                            <p class="text-uppercase footer">Email</p>
-                            <ul class="list-unstyled mb-0">
-                                <li>
-                                    <a href="mailto:investorrelations@kainos.com" class="text-white">
-                                        investorrelations@kainos.com
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-lg">
-                            <p class="text-uppercase footer">Phone</p>
-                            <ul class="list-unstyled mb-0">
-                                <li>
-                                    <a href="tel:028 9057 1100" class="text-white">
-                                        028 9057 1100
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-            </div>
-            <hr class="mt-4" />
-
-            <div class="text-center p-3">© 2023 Team1Kainos</div>
-        </footer>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-            crossorigin="anonymous"
-        ></script>
         {% endblock %}
     </body>
+    {% block main %} {% endblock %} {% block footer %}
+  
+    <footer class="footer text-center mt-5">
+        <div class="container-fluid p-2 pb-0">
+            <section class="container-fluid">
+                <div class="row">
+                    <div class="col-md">
+                        <p class="text-uppercase footer-font">Address</p>
+                        <p class="footer-font">Kainos House</p>
+                        <p class="footer-font">4-6 Upper Crescent</p>
+                        <p class="footer-font">Belfast BT7 1NT</p>
+                        <p class="footer-font">Northern Ireland</p>
+                    </div>
+                    <div class="col-md">
+                        <p class="text-uppercase footer-font">Email</p>
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a
+                                    href="mailto:investorrelations@kainos.com"
+                                    class="text-white footer-font"
+                                    >investorrelations@kainos.com</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md">
+                        <p class="text-uppercase footer-font">Phone</p>
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a
+                                    href="tel:028 9057 1100"
+                                    class="text-white footer-font"
+                                    >028 9057 1100</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <hr />
+        <div class="text-center footer-font">© 2023 Team One Force</div>
+    </footer>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"
+    ></script>
+    {% endblock %}
 </html>

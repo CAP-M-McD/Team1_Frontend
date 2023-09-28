@@ -6,4 +6,5 @@ export class Role {
     managementLevel: string
     description: string
     minimalEssentialRequirements: string
+    sharepointLink: string
 }
