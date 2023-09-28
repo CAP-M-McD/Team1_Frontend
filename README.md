@@ -30,8 +30,8 @@ MacOS users add "export API_URL=http://localhost:8080/" to their .zshrc file
 2. To Run Unit tests use `npm test` (This will show test passes & fails)
 
 -   To Run Unit tests and view test coverage use `npm run test-coverage`
-3. Add these enviornment variables `ADMIN_UI_EMAIL='adminEmail` and `ADMIN_UI_PASSWORD='adminPassword`
-4. To Run UI tests use `npm run test-ui` (This will show test passes & fails)
+
+3. To Run UI tests use `npm run test-ui` (This will show test passes & fails)
 
 ## How to run lint checks
 

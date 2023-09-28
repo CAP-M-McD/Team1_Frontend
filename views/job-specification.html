@@ -1,0 +1,33 @@
+{% extends "layout.html" %} 
+ {% set page_title = "Job Specification" %} {% block main
+    %}
+<main class="container mt-4">
+    <section class="col d-flex justify-content-center mt-4" id="job-specification">
+        {% if role %}
+       
+        <div class="card text-center card-width card-border">
+            <div class="card-body">
+              <h3 class="card-title"> {{ role.jobProfileTitle }}</h3>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item" id="capability"> Capability: {{ role.capability }} </li>
+              <li class="list-group-item" id="jobFamily">Job Family: {{ role.jobFamily }}</li>
+              <li class="list-group-item" id="management-level">Management Level: {{ role.managementLevel }}</li>
+              <li class="list-group-item" id="description">Description: <br>{{ role.description | nl2br | safe}}</li>
+              <li class="list-group-item" id="minimalEssentialRequirements">Essential Criteria:<br> {{ role.minimalEssentialRequirements |nl2br | safe}}</li>
+              <li class="list-group-item" id="sharepointLink">
+                <a href="{{ role.sharepointLink}}" target="_blank">View on Sharepoint</a></li>
+            </ul>
+            <div class="card-body">
+                <a href="/job-roles" class="card-link">Back to roles</a>
+              </div>
+            </div>
+          </div>
+
+        {% else %}
+
+        Could not find Job Specification
+        {% endif %}
+        </section>
+        </main>
+{% endblock %}
