@@ -26,4 +26,5 @@ app.listen(3000, () => {
     console.log('Server listening on port 3000')
 })
 
-require('./controller/helloWorldController')(app)
+require('./controller/rolesController')(app)
+require('./controller/baseController')(app)

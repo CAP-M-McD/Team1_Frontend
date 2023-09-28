@@ -1,0 +1,41 @@
+{% extends "layout.html" %} {% set page_title = "View Job Roles" %} {% block
+main %}
+<main>
+    <section>
+        <section id="roles" class="mt-4">
+            <h1 style="text-align: center; margin: auto; padding-bottom: 20px">
+                View All Job Roles
+            </h1>
+            {% if role and role.length > 0 %}
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Job Title</th>
+                        <th scope="col">Job Family</th>
+                        <th scope="col">Capabilities</th>
+                        <th scope="col">Band</th>
+                        <th scope="col">View Spec</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for role in role %}
+                    <tr>
+                        <td id="job-profile-title">{{ role.jobProfileTitle }}</td>
+                        <td id="job-family">{{ role.jobFamily }}</td>
+                        <td id="capability">{{ role.capability }}</td>
+                        <td id="management-level">{{ role.managementLevel }}</td>
+                        <td id = view-spec-button>
+                            <a href="/job-specification/{{ role.roleId }}">View</a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            {% else %}
+            No Job Roles can be found
+            {% endif %}
+        </section>
+    </section>
+</main>
+
+{% endblock %}

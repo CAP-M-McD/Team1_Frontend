@@ -19,6 +19,20 @@
 
 -   To Run UI tests locally open two terminals and in one terminal use `npm start` and run the backend with it's instructions and then use `npm run test-ui`
 
+3. To check that your application is running enter url `http://localhost:3000/employees`
+
+Tip: To add applications as part the machine environment variables you need to add the application urls localy i.e.
+MacOS users add "export API_URL=http://localhost:8080/" to their .zshrc file
+
+## How to Test Application:
+
+1. Run `npm install` to build application
+2. To Run Unit tests use `npm test` (This will show test passes & fails)
+
+-   To Run Unit tests and view test coverage use `npm run test-coverage`
+
+3. To Run UI tests use `npm run test-ui` (This will show test passes & fails)
+
 ## How to run lint checks
 
 1. Run `npm run lint` to check for lint errors
