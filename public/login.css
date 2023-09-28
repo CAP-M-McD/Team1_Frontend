@@ -1,0 +1,96 @@
+@font-face {
+    font-family: Gothic;
+    src: url('GOTHIC.TTF');
+}
+
+html,
+body {
+    position: relative;
+    color: #283583;
+    background-color: #fff;
+    width: 100%;
+    min-height: 100%;
+    margin-bottom: 100px;
+    clear: both;
+    padding-bottom: 70px;
+    /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
+    font-family: Gothic;
+}
+
+.header {
+    background-color: #fff;
+    color: #283583;
+}
+
+.nav-link {
+    color: #283583;
+}
+
+.login {
+    background-color: #fff;
+    color: #283583;
+    border: 1px solid #283583;
+    cursor: pointer;
+}
+
+.login:hover {
+    background-color: #283583;
+    color: white;
+}
+
+.hero-login {
+    background-color: #fff;
+    border: 2px solid #283583;
+    color: #283583;
+    cursor: pointer;
+}
+
+.hero-login:hover {
+    background-color: #283583;
+    color: white;
+}
+
+.navbar-toggler-icon {
+    background-color: #575756;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+footer {
+    background-color: #283583;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 225px;
+}
+
+.footer-font {
+    margin: 5px 0;
+    font-size: 0.8em;
+}
+
+.container-fluid {
+    width: 100%;
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+.hero {
+    width: 100%;
+    height: 575px;
+    background-image: url('./imgs/HeroPic.jpeg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+}
+
+.smaller {
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
