@@ -1,5 +1,4 @@
 name: Build and Deploy
-
 on:
   push:
     branches: [ "main" ]
@@ -24,6 +23,8 @@ jobs:
     - run: npm run build --if-present
     - name: Run Lint checks
       run: npm run lint
+    - name: Run Unit Tests
+      run: npm test
 
   deploy:
     if: github.ref == 'refs/heads/main'
@@ -44,7 +45,7 @@ jobs:
     - name: Build & push the Docker image
       id: build-image
       env:
-        API_URL: ${{ secrets.API_URL }}
+        API_URL: ${{ vars.API_URL }}
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
         ECR_REPOSITORY: employee_demo
         IMAGE_TAG: belfast-team-1-ui
